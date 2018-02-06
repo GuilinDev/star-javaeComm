@@ -36,3 +36,10 @@ hs_err_pid*
 
 # Property files
 .properties
+*.properties
+*.properties
+b2c/src/main/webapp/config/jdbc.properties
+*.properties
+
+
+
