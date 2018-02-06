@@ -79,7 +79,7 @@ $(function(){
 <!--最上导航-->
 	<div class="top">
 		<div class="welcome">
-			<span class="title"><a href="${ctx}/index.html">TEST您好，欢迎来到本站！</a></span>
+			<span class="title"><a href="${ctx}/index.html">Welcome to Star Kitchen Cabinets！</a></span>
 			<div class="login_bar login">
 			</div>	
 			<div class="navigation">
@@ -87,10 +87,10 @@ $(function(){
 					<li class="first">
 						<ul>
 							<li id="message_tool_wrapper">
-								<a href="${ctx}/member/messagefront_list.html" class="index-go-message">站内消息(<span class="message-num">0</span>)</a>
+								<a href="${ctx}/member/messagefront_list.html" class="index-go-message">Messages(<span class="message-num">0</span>)</a>
 							</li>
 							<li id="cart_bar_wrapper">
-								<a href="${ctx}/cart.html" class="index-go-cart">购物车(<span class="num">0</span>)件<i class="common-cart-down"></i></a>
+								<a href="${ctx}/cart.html" class="index-go-cart">Shop Cart(<span class="num">0</span>)items<i class="common-cart-down"></i></a>
 								<div class="cart_content02" style="display:none">
 									<div class="cart_list"><@image class="loading" src='${ctx}${themes_path}/images/ajax-loader.gif'/></div>
 								</div>
@@ -98,7 +98,7 @@ $(function(){
 							<!--购物车下拉菜单结束-->
 						</ul>
 					</li>
-					<li><a href="${ctx}/help.html">帮助中心</a></li>
+					<li><a href="${ctx}/help.html">Help Center</a></li>
 					<li style="background:none;"><a href="#">&nbsp;&nbsp;&nbsp;</a></li>
 					<li style="background:none;"><a href="#">&nbsp;&nbsp;&nbsp;</a></li>
 					<li style="background:none;"><a href="#">&nbsp;&nbsp;&nbsp;</a></li>
@@ -120,7 +120,7 @@ $(function(){
 				$.ajax({
 					url      : ctx + "/api/shop/member/logout.do",
 					dataType : "json",
-					cache    : false,             //清楚缓存，暂时测试，如果产生冲突，请优先考虑是否是这条语句。
+					cache    : false,             //清除缓存，暂时测试，如果产生冲突，请优先考虑是否是这条语句。
 					success  : function(result){
 						if(result.result == 1){
 							$.alert(result.message);
