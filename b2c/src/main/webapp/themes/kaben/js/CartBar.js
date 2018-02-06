@@ -90,7 +90,7 @@ var CartBar={
 						 }
 						 if(result.data.count=="0"){
 							$(".cart_content02").empty();
-							$(".cart_content02").html("<p class='no_cartlist' style='border:0px!important;'>There is no products in your shop cart</p>");
+							$(".cart_content02").html("<p class='no_cartlist' style='border:0px!important;'>There is no items in your shop cart</p>");
 						 }
 					 }
 				 }
